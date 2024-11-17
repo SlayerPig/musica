@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floppy, el Conejo Programador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Botón "Iniciar" personalizado -->
+    <button id="iniciar-btn" class="techno-btn">¡Habla con Floppy!</button>
+    
+    <!-- Imagen del conejo -->
+    <img id="conejo" src="https://i.postimg.cc/jj6x4bgf/conejote.png" alt="Floppy, el conejo programador" style="display: none;">
+
+    <!-- Mensaje interactivo -->
+    <p id="mensaje"></p>
+    
+    <!-- Botones de respuesta -->
+    <button id="si-btn" class="respuesta-btn" style="display: none;">Sí</button>
+    <button id="no-btn" class="respuesta-btn" style="display: none;">No</button>
+
+    <!-- Cuestionario -->
+    <div id="cuestionario" style="display: none;">
+        <div id="opciones"></div>
+    </div>
+  
+    <!-- Puntuaciones -->
+    <div id="puntuaciones" style="display: none;"></div>
+
+    <!-- Botón para reiniciar -->
+    <button id="reiniciar-btn" style="display: none;">Reiniciar</button>
+
+    <!-- Top de puntuaciones -->
+    <div id="top-puntuaciones" style="display: none;">
+        <h3>Top de Puntuaciones:</h3>
+        <ul id="lista-puntuaciones"></ul>
+    </div>
+
+    <!-- Entrada para nombre -->
+    <input type="text" id="nombre-input" placeholder="Escribe tu nombre" style="display: none;">
+
+  <audio id="musica" loop>
+    <source src="audio/musica.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
+  
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

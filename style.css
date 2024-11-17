@@ -1,0 +1,98 @@
+/* Fondo de la página */
+body {
+    background-color: #f0f8ff;
+    background-image: url('https://th.bing.com/th/id/OIP.eDWLTNKqPUKss4eH-HQ2hwHaEK?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white; /* Mejor contraste con el fondo */
+    text-align: center;
+}
+
+/* Estilo general de botones */
+button {
+    font-family: "Press Start 2P", cursive;
+    border: 2px solid #00ff00;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+/* Estilo Technoblade para botón "Iniciar" */
+#iniciar-btn {
+    background: linear-gradient(45deg, #f44336, #ff9800);
+    color: white;
+    border: 2px solid #d32f2f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#iniciar-btn:hover {
+    background: linear-gradient(45deg, #e64a19, #f57c00);
+    color: black;
+    transform: scale(1.1); /* Escala al pasar el mouse */
+}
+
+/* Estilo de Floppy */
+#conejo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    display: none; /* Oculto al inicio */
+    margin: 20px auto;
+    transition: transform 0.3s ease; /* Animación al mostrarse */
+}
+
+/* Mostrar el conejo con una clase */
+.show {
+    display: block;
+    transform: scale(1.1); /* Efecto al aparecer */
+}
+
+/* Estilo del mensaje */
+#mensaje {
+    font-size: 20px;
+    font-weight: bold;
+    display: none; /* Oculto al inicio */
+    margin: 20px;
+    color: #000000FF; /* Resalta el texto */
+    animation: fadeIn 0.5s ease-in-out; /* Suavizar aparición */
+}
+
+/* Botones de respuesta */
+.respuesta-btn {
+    padding: 12px 18px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: #f9a825;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    display: none; /* Oculto al inicio */
+}
+
+.respuesta-btn:hover {
+    background-color: #fbc02d;
+    transform: scale(1.1); /* Efecto visual */
+}
+
+/* Clase de utilidad para mostrar elementos */
+.visible {
+    display: block;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
